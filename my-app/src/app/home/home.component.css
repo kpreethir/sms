@@ -1,0 +1,211 @@
+/* Main content styling */
+.main-content {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Section styling */
+.vacancies, .college-media, .info-section {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.vacancies h2, .college-media h2, .info-section h2 {
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+/* Links styling */
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.links a:hover {
+    color: #004d40;
+    transform: scale(1.1);
+}
+
+/* Info section styling */
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.counselling, .alumni-speak {
+    flex: 1;
+    min-width: 45%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.counselling:hover, .alumni-speak:hover {
+    transform: translateY(-5px);
+}
+
+.counselling h3, .alumni-speak h3 {
+    margin-top: 0;
+    color: #00796b;
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 668px) {
+    .info-section {
+        flex-direction: column;
+    }
+    .counselling, .alumni-speak {
+        min-width: 100%;
+    }
+    .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+}
+.footer-content {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 25px;
+    padding: 5px;
+}
+
+button{
+    width: 500px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid #00796b;
+    background: rgb(0,121,107,0.25); 
+    color:#00796b;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: rgb(0,121,107,0.75);
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /* transition: 0.5s; */
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.college-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* .college-image {
+    background: rgb(0,121,107,0.25);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00796b;
+    margin: 20px 0;
+    max-width: 80%;
+}
+
+.college-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+} */
+.college-media-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0,121,107,0.25);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00796b;
+    margin: 20px 0;
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* .alumni-speak{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.al-video{
+    width:95%;
+    height: 200px;
+} */

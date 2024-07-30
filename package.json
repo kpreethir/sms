@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@angular/animations": "^18.1.2",
+    "@coreui/angular": "^5.2.11",
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "ngx-bootstrap": "^18.0.2",
+    "node": "^20.16.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.6"
+  }
+}
